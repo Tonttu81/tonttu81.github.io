@@ -4,20 +4,52 @@
         <title>Joni Pylkkonen | Games</title>
 
         <link rel="stylesheet" href="stylesheet.css">
+
+        <script src="images.js"></script>
     </head>
     <body>
         <div class="topbar">
 
             <a href="index.html">
-                <div class="button" style="left: 10%; background-color: #e9e9e9;">
+                <div class="button" style="left: 5%; background-color: #e9e9e9;">
                     <p class="buttontext">About me</p>
                 </div>    
             </a>
             
-            <div class="button" style="left: 50vh; background-color: #dadada;">
+            <div class="button" style="left: 15%; background-color: #dadada;">
                 <p class="buttontext">Games</p>
             </div>
             
         </div>
+
+        <h1 class="gametext">2D Platformer</h1>
+
+        <div style="width: 80vw;margin:auto;">
+
+            <div class="image">
+                <img src="1_ss1.PNG" style="width: 100%;">
+            </div>
+
+            <div class="image">
+                <img src="1_ss2.PNG" style="width: 100%;">
+            </div>       
+            
+            <div class="image">
+                <img src="1_ss3.PNG" style="width: 100%;">
+            </div>    
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        
     </body>
 </html>
