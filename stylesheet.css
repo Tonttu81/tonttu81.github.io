@@ -37,6 +37,8 @@ p {
     text-align: center;
 }
 
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+
 .image {
     display: none;
 }
