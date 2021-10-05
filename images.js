@@ -1,4 +1,4 @@
-var slideIndex = [1,1,1,1,1];
+var slideIndex = [1,1,1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
 
 window.onload = function showAllSlides() {
@@ -6,7 +6,7 @@ window.onload = function showAllSlides() {
   showSlides(1, 1);
   showSlides(1, 2);
   showSlides(1, 3);
-  showSlides(1, 4);
+  
 }
 
 function plusSlides(n, no) {
