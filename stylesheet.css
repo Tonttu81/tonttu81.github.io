@@ -108,11 +108,30 @@ p {
     position: absolute;
     left:-15px; 
     bottom: -15px;
+    display: table;
     backdrop-filter: blur(8px); 
-}
-
-.backdrop:hover {
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+}
+
+.backdrop:hover {   
     opacity: 100%;
+}
+
+.gametitle {
+    color: white; 
+    font-size: 40px; 
+    text-align: center; 
+    display:table-cell; 
+    vertical-align: middle; 
+}
+
+.gamepage {
+    width:100%; 
+    height:80vh; 
+    background-color:black; 
+    opacity: 50%;  
+    z-index: 100;
+    position: fixed; 
+    
 }

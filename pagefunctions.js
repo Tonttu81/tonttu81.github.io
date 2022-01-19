@@ -28,6 +28,13 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block"; 
 }
 
+function showPage(pageID) {
+  document.getElementById(pageID).style.display = "";
+}
+
+function closePage(pageID) {
+  document.getElementById(pageID).style.display = "none";
+}
 /*var slideIndex = 1;
 showSlides(slideIndex);
 

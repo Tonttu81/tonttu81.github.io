@@ -5,10 +5,46 @@
 
         <link rel="stylesheet" href="stylesheet.css">
 
-        <script src="images.js"></script>
+        <script src="pagefunctions.js"></script>
     </head>
     <body>
-        <div>
+        <div id="5" class="gamepage" style="display:none;">
+            <button type="button" onclick="closePage(5)">
+                <div style="width:200px; height:200px; background-color:blue;">
+                </div>
+            </button>
+        </div>
+
+        <div id="4" class="gamepage" style="display:none;">
+            <button type="button" onclick="closePage(4)">
+                <div style="width:200px; height:200px; background-color:blue;">
+                </div>
+            </button>
+        </div>
+
+        <div id="3" class="gamepage" style="display:none;">
+            <button type="button" onclick="closePage(3)">
+                <div style="width:200px; height:200px; background-color:blue;">
+                </div>
+            </button>
+        </div>
+
+        <div id="2" class="gamepage" style="display:none;">
+            <button type="button" onclick="closePage(2)">
+                <div style="width:200px; height:200px; background-color:blue;">
+                </div>
+            </button>
+        </div>
+
+        <div id="1" class="gamepage" style="display:none;">
+            <button type="button" onclick="closePage(1)">
+                <div style="width:200px; height:200px; background-color:blue;">
+                </div>
+            </button>
+        </div>
+
+        <div style="position:fixed;">
+            
             <div class="topbar">
 
                 <a href="index.html">
@@ -22,7 +58,7 @@
                 </div>
     
 
-
+                <!--Language-->
                 <div style="float:right;display:flex; justify-content: space-between;">
                     <div style="background-color: #dadada;text-align: center; width:60px; height:30px; margin: 10px;">
                         
@@ -38,24 +74,61 @@
                 
             </div>
     
+            <!---Container peleille-->
             <div style="width: 100%; height: 100%; display:flex; flex-wrap:wrap;justify-content: space-around;">
+                <!---Uusin peli-->
                 <div style="position: relative;" class="gamebox">
                     <img src="images/4_preview.jpg" class="gamebox" style="position: absolute; left: -17px; bottom: -17px;"></img>
-                    <div class="backdrop">Sandbox</div>
+                    <button type="button" onclick="showPage(5)">
+                        <div class="backdrop">
+                            <p class="gametitle">VR Testing</p>
+                        </div>
+                    </button>
+                    
                 </div>
+
+                <!--4-->
+                <div style="position: relative;" class="gamebox">
+                    <img src="images/4_preview.jpg" class="gamebox" style="position: absolute; left: -17px; bottom: -17px;"></img>
+                    <button type="button" onclick="showPage(4)">
+                        <div class="backdrop">
+                            <p class="gametitle" id="vrgame">Mobile Sandbox</p>
+                        </div>
+                    </button>
+                </div>
+
+                <!--3-->
                 <div style="position: relative;" class="gamebox">
                     <img src="" class="gamebox" style="position: absolute; left: -17px; bottom: -17px;"></img>
-                    <div class="backdrop">Sandbox</div>
+                    <button type="button" onclick="showPage(3)">
+                        <div class="backdrop">
+                            <p class="gametitle">3D Puzzle Game</p>
+                        </div>
+                    </button>
                 </div>
+
+                <!--2-->
                 <div style="position: relative;" class="gamebox">
                     <img src="images/2_preview.jpg" class="gamebox" style="position: absolute; left: -17px; bottom: -17px;"></img>
-                    <div class="backdrop">Sandbox</div>
+                    <button type="button" onclick="showPage(2)">
+                        <div class="backdrop">
+                            <p class="gametitle">Top-down Shooter</p>
+                        </div>
+                    </button>
                 </div>
+
+                <!--Ensimmäinen-->
                 <div style="position: relative;" class="gamebox">
                     <img src="images/1_preview.jpg" class="gamebox" style="position: absolute; left: -17px; bottom: -17px;"></img>
-                    <div class="backdrop">Sandbox</div>
+                    <button type="button" onclick="showPage(1)">
+                        <div class="backdrop">
+                            <p class="gametitle">2D Platformer</p>
+                        </div>
+                    </button>
                 </div>
+
             </div>
+
         </div>
     </body>
 </html>
