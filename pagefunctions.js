@@ -1,6 +1,8 @@
 var slideIndex = [1,1,1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
 
+var pageOpen = false;
+
 window.onload = function showAllSlides() {
   showSlides(1, 0);
   showSlides(1, 1);
@@ -29,11 +31,16 @@ function showSlides(n, no) {
 }
 
 function showPage(pageID) {
-  document.getElementById(pageID).style.display = "";
+  if (pageOpen == false)
+  {
+    document.getElementById(pageID).className = "gamepagecontaineractive";
+    pageOpen = true;
+  }
 }
 
 function closePage(pageID) {
-  document.getElementById(pageID).style.display = "none";
+  pageOpen = false;
+  document.getElementById(pageID).className = "gamepagecontainer";
 }
 /*var slideIndex = 1;
 showSlides(slideIndex);

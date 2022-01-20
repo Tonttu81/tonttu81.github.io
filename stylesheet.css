@@ -128,7 +128,19 @@ p {
 
 .gamepagecontainer {
     width:90vw; 
-    height:90vw; 
+    height:0; 
+    background-color:black; 
+    opacity: 90%;  
+    z-index: 10;
+    position: fixed; 
+    left: 5%;
+    top: 100%;
+    overflow-x: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.gamepagecontaineractive {
+    width:90vw; 
     background-color:black; 
     opacity: 90%;  
     z-index: 10;
@@ -136,9 +148,16 @@ p {
     left: 5%;
     top: 5%;
     overflow-x: hidden;
+    height: 90vw;
+    transition: all 500ms ease-in-out;
 }
 
 .gamepagecontainer::-webkit-scrollbar {
+    width: 0;
+    background:transparent;
+}
+
+.gamepagecontaineractive::-webkit-scrollbar {
     width: 0;
     background:transparent;
 }
