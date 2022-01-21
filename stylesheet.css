@@ -137,6 +137,9 @@ p {
     top: 100%;
     overflow-x: hidden;
     transition: all 500ms ease-in-out;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
 }
 
 .gamepagecontaineractive {
@@ -150,6 +153,9 @@ p {
     overflow-x: hidden;
     height: 90vw;
     transition: all 500ms ease-in-out;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
 }
 
 .gamepagecontainer::-webkit-scrollbar {
@@ -165,8 +171,8 @@ p {
 .gamepage {
     width: 90vw; 
     height:2000px;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(225,225,225);
+    background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
 }
 
 .closebutton {
