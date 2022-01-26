@@ -2,19 +2,22 @@
 <html>
     <head>
 
+        <script src="savelang.js"></script>
+
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body onload="redirect()">
         <div class="box">
-            <a href="fi/index.html">
-                <div class="language" style="background-color: white;">
-                    Suomi
+            <a href="" onclick="setLang('fi')">
+                <div class="language">
+                    
+                    <h1>Suomi</h1>
                 </div>
             </a>
 
-            <a href="en/index.html">
-                <div class="language" style="background-color: white;">
-                    English
+            <a href="" onclick="setLang('en')">
+                <div class="language">
+                    <h1>English</h1>
                 </div>
             </a>
         </div>
