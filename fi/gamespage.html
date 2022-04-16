@@ -11,10 +11,38 @@
     <body>
         <!--Pelien sivut-->
 
+        <!--Forester-->
+        <div id="6" class="gamepagecontainer">
+            <div class="gamepage">
+                <div class="gamepageheadercontainer">
+                    <h1 class="gametext">Forester</h1>
+                </div>
+                
+        
+                <div style="width: 80vw; margin: auto; position: relative;">
+        
+                    <div class="mySlides5">
+        
+                    </div>
+                </div>
+        
+                <p>
+                    test
+                </p>
+        
+                <button style="all: unset;" type="button" onclick="closePage(6)">
+                    <div class="closebutton"></div>
+                </button>
+            </div>
+        </div>
+
         <!--Vr testing-->
         <div id="5" class="gamepagecontainer">
             <div class="gamepage">
-                <h1 class="gametext">VR Testailua</h1>
+                <div class="gamepageheadercontainer">
+                    <h1 class="gametext">VR Testailua</h1>
+                </div>
+                
         
                 <div style="width: 80vw; margin: auto; position: relative;">
         
@@ -40,7 +68,10 @@
         <!--Puhelinpeli-->
         <div id="4" class="gamepagecontainer">
             <div class="gamepage">
-                <h1 class="gametext">Sandbox -peli puhelimelle</h1>
+                <div class="gamepageheadercontainer">
+                    <h1 class="gametext">Sandbox -peli puhelimelle</h1>
+                </div>
+                
 
                 <div style="width:80vw; margin:auto; position:relative;">
 
@@ -72,7 +103,10 @@
         <!--3D puzzle game-->
         <div id="3" class="gamepagecontainer">
             <div class="gamepage">
-                <h1 class="gametext">3D Pulmapeli</h1>
+                <div class="gamepageheadercontainer">
+                    <h1 class="gametext">3D Pulmapeli</h1>
+                </div>
+                
         
                 <div style="width:80vw; margin:auto; position:relative;">
                     <img src="../images/3_1.gif" style="width: 100%;">
@@ -94,7 +128,10 @@
         <!--top down shooter-->
         <div id="2" class="gamepagecontainer">
             <div class="gamepage">
-                <h1 class="gametext">Top-down shooter</h1>
+                <div class="gamepageheadercontainer">
+                    <h1 class="gametext">Top-down shooter</h1>
+                </div>
+                
         
                 <div style="width:80vw; margin:auto; position:relative;">
         
@@ -133,7 +170,10 @@
         <!--2D platformer-->
         <div id="1" class="gamepagecontainer">
             <div class="gamepage">
-                <h1 class="gametext">2D Tasohyppelypeli</h1>
+                <div class="gamepageheadercontainer">
+                    <h1 class="gametext">2D Tasohyppelypeli</h1>
+                </div>
+                
         
                 <div style="width:80vw;  margin:auto; position:relative;">
                     <div class="mySlides1">
@@ -178,17 +218,17 @@
                     </div>    
                 </a>
                 
-                <div class="button" style="left: 15%; background-color: #dadada;">
-                    <p class="buttontext">Projektit</p>
+                <div class="button" style="left: 15%; background-color: #ffffff;">
+                    <p class="buttontext" style="color:#000000;">Projektit</p>
                 </div>
     
 
                 <!--Language-->
                 <div style="float:right;display:flex; justify-content: space-between;">
-                    <div class="languagebutton" style="background-color: #dadada;">Suomi</div>
+                    <div class="languagebutton" style="background-color: #ffffff;">Suomi</div>
 
                     <div class="languagebutton" style="text-align: center; width:60px; height:20px; margin: 10px;">
-                        <a href="../en/gamespage.html" onclick="setLang('en')">English</a>
+                        <a href="../en/gamespage.html" onclick="setLang('en')" style="color:#ffffff;">English</a>
                     </div>
                 </div>
                 
@@ -199,7 +239,18 @@
             <div style="width: 100%; height: 100%; display:flex; flex-wrap:wrap;justify-content: space-around;">
                 <!---Uusin peli-->
                 <div style="position: relative;" class="gamebox">
-                    <img src="" class="gamebox"></img>
+                    <img src="../images/6_preview.jpg" class="gamebox"></img>
+                    <button type="button" onclick="showPage(6)">
+                        <div class="backdrop">
+                            <p class="gametitle">Forester</p>
+                        </div>
+                    </button>
+                    
+                </div>
+
+                <!--5-->
+                <div style="position: relative;" class="gamebox">
+                    <img src="../images/5_preview.jpg" class="gamebox"></img>
                     <button type="button" onclick="showPage(5)">
                         <div class="backdrop">
                             <p class="gametitle">VR Testailua</p>
@@ -220,7 +271,7 @@
 
                 <!--3-->
                 <div style="position: relative;" class="gamebox">
-                    <img src="" class="gamebox"></img>
+                    <img src="../images/3_preview.jpg" class="gamebox"></img>
                     <button type="button" onclick="showPage(3)">
                         <div class="backdrop">
                             <p class="gametitle">3D Pulmapeli</p>
@@ -249,6 +300,9 @@
                 </div>
 
             </div>
+
         </div>
+
+        
     </body>
 </html>

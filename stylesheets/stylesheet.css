@@ -1,12 +1,17 @@
 body {
     margin: 0px;
     
-    background: rgb(225,225,225);
-    background: linear-gradient(180deg, rgba(225,225,225,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+    background: rgb(255, 255, 255);
+    
+}
+
+@font-face {
+    font-family: 'aller';
+    src: url(../fonts/Aller_Bd.ttf);
 }
 
 p {
-    font-family: arial;
+    font-family: 'aller';
 }
 
 .topbar {
@@ -14,12 +19,12 @@ p {
     width: 100%;
     height: 80px;
     opacity: 100%;
-    background-color: #eeeeee;
+    background-color: #202020;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-width:1px;
     border-bottom-style: solid;
     border-color:black;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .button {
@@ -33,22 +38,16 @@ p {
 }
 
 .button:hover {
-    background-color: #e9e9e9;
+    background-color: #444444;
 }
 
 .buttontext {
+    color:#ffffff;
     display: table-cell;
     vertical-align: middle;
 }
 
-.gametext {
-    font-family: Arial;
-    padding-bottom: 50px;
-    padding-top:50px; 
-    text-align: center;
-}
-
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
 
 .image {
     display: none;
@@ -133,10 +132,19 @@ p {
     vertical-align: middle; 
 }
 
+.gametext {
+    font-family: 'aller';
+    padding-bottom: 50px;
+    padding-top:0px; 
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+}
+
 .gamepagecontainer {
     width:90vw; 
     height:0; 
-    background-color: #f0f0f0;
+    background-color: #202020;
      
     z-index: 10;
     position: fixed; 
@@ -151,7 +159,7 @@ p {
 
 .gamepagecontaineractive {
     width:90vw; 
-    background-color: #f0f0f0;
+    background-color: #202020;
      
     z-index: 10;
     position: fixed; 
@@ -179,8 +187,15 @@ p {
 .gamepage {
     width: 90vw; 
     height: 2200px;
-    background: rgb(225,225,225);
-    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(200, 200, 200, 1) 90%, rgba(200, 200, 200, 1) 100%);
+    background:#ffffff;
+}
+
+.gamepageheadercontainer {
+    width: 100%; 
+    height: 120px; 
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    background: #202020;
 }
 
 .closebutton {
@@ -202,7 +217,7 @@ p {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
 }
 
 .closebutton:before {
@@ -228,9 +243,9 @@ a:link {
     height:20px; 
     margin: 10px; 
     border-radius:5px;
-    font-family: arial;
+    font-family: 'aller';
 }
 
 .languagebutton:hover {
-    background-color: #e9e9e9;
+    background-color: #444444;
 }
