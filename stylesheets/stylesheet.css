@@ -50,16 +50,19 @@ p {
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
 
 .image {
-    display: none;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prev {
+    left: 1%;
 }
 
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    bottom: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -69,7 +72,7 @@ p {
 }
 
 .next {
-    right: 0;
+    left: 96.6%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -143,7 +146,7 @@ p {
 
 .gamepagecontainer {
     width:90vw; 
-    height:0; 
+    height:0vh; 
     background-color: #202020;
      
     z-index: 10;
@@ -159,8 +162,8 @@ p {
 
 .gamepagecontaineractive {
     width:90vw; 
+    height: 100vh;
     background-color: #202020;
-     
     z-index: 10;
     position: fixed; 
     overflow-x: hidden;
@@ -186,7 +189,7 @@ p {
 
 .gamepage {
     width: 90vw; 
-    height: 2200px;
+    height: 150vh;
     background:#ffffff;
 }
 
@@ -196,6 +199,36 @@ p {
     border-bottom-left-radius: 5px; 
     border-bottom-right-radius: 5px; 
     background: #202020;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+}
+
+.gamepageflexbox {
+    padding-top:4vh;
+    display: flex; 
+    width: 100%; height: 600px; 
+    flex-wrap: wrap-reverse; 
+    justify-content: space-evenly; 
+    align-content: space-around;
+}
+
+.gamepageinfocontainer {
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right: 10px;
+    background-color:#202020; 
+    width: 400px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gamepagelink {
+    color: orange;
+    font-family: 'aller';
+}
+
+.gamepagelink:hover {
+    color: white;
 }
 
 .closebutton {
@@ -230,7 +263,7 @@ p {
   
 
 a:visited {
-    color: black;
+    color: orange;
 }
 
 a:link {
