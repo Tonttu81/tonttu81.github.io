@@ -1,5 +1,5 @@
-var slideIndex = [1,1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+var slideIndex = [1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"];
 
 var pageOpen = false;
 
@@ -8,7 +8,7 @@ window.onload = function showAllSlides() {
   showSlides(1, 1);
   showSlides(1, 2);
   showSlides(1, 3);
-  
+  showSlides(1, 4);
 }
 
 function plusSlides(n, no) {
@@ -42,32 +42,3 @@ function closePage(pageID) {
   pageOpen = false;
   document.getElementById(pageID).className = "gamepagecontainer";
 }
-/*var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("image");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-*/

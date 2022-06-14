@@ -2,7 +2,8 @@ body {
     margin: 0px;
     
     background: rgb(255, 255, 255);
-    
+
+    background-size: cover; 
 }
 
 @font-face {
@@ -47,7 +48,9 @@ p {
     vertical-align: middle;
 }
 
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {
+    display: none
+}
 
 .image {
     width: 100%;
